@@ -1,0 +1,11 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: E:\yolov5-master\datasets\weed  # dataset root dir
+# path: /home/ge107552201346/mydatasets  # dataset root dir
+train: /home/ge107552201346/datasets/cotton12/train.txt   #  3953  train images (relative to 'path')
+val: /home/ge107552201346/datasets/cotton12/val.txt       #  1129    val images (relative to 'path')
+test: /home/ge107552201346/datasets/cotton12/test.txt     #  566   test images (optional)
+
+# Classes
+nc: 12  # number of classes
+names: ['Waterhemp','Morninglory','Purslane','SpottedSpurge','Carpetweed','Ragweed','Eclipta','PricklySida','PalmerAmaranth','Sicklepod','Goosegrass','CutleafGroundcherry']
+# names: ['1','2','3','4','5','6','7','8','9','10','11','12']  # class names

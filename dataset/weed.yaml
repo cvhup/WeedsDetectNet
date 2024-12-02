@@ -1,0 +1,11 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#    1482    636
+# path: /home/ge107552201346/mydatasets  # dataset root dir
+train: /home/ge107552201346/datasets/oursdatasets/train.txt  #  1390train images (relative to 'path')
+val: /home/ge107552201346/datasets/oursdatasets/val.txt      #  396val images (relative to 'path')
+test: /home/ge107552201346/datasets/oursdatasets/test.txt    #  204test images (optional)
+
+# Classes
+nc: 6  # number of classes
+# names: ['��֦��','����','����','���մ�','������','������']  # class names
+names: ['Amaranthus','Chenopodium','Solanum nigrum','Alhagi sparsifolia','Purslane','Convolvulus']  # class names

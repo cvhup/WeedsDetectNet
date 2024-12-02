@@ -1,0 +1,26 @@
+# Ultralytics YOLO 🚀, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: yolo train data=coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets2
+#     └── coco128  ← downloads here (7 MB)
+
+
+
+# path: "./datasets"  # 数据集根目录
+train: /home/ge107552201346/datasets/4weed/train.txt  # 432
+val: /home/ge107552201346/datasets/4weed/val.txt      # 123
+test: /home/ge107552201346/datasets/4weed/test.txt    # 63
+
+
+
+# Classes
+nc: 4
+names: ['ragweed', 'pigweed', 'cocklebur', 'foxtail']
+# names: [ '0','1', '2','3']
+
+
+
+# Download script/URL (optional)
+#download: https://ultralytics.com/assets/coco128.zip

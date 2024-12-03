@@ -48,12 +48,19 @@ mim install "mmcv==2.2.0"
 
 ### Datasets
 Self-built dataset：[https://drive.google.com/drive/folders/1JIuWTEHDsO3MxIktByN3Qn2xBXhHsdyz?usp=sharing](https://drive.google.com/drive/folders/1JIuWTEHDsO3MxIktByN3Qn2xBXhHsdyz?usp=sharing)
+
 CottonWeedDet12 dataset：[https://zenodo.org/records/7535814](https://zenodo.org/records/7535814)
+
 4WEED DATASET dataset：[https://osf.io/w9v3j/](https://osf.io/w9v3j/)
+
 Divide the dataset：training set: validation set: test set=7:2:1
+
 Self-built dataset（ 6 categories and 1990 images）：training set: validation set: test set=1390：396：204
+
 CottonWeedDet12 dataset（ 12 categories and 5648 images）:training set: validation set: test set=3953：1129：566
+
 4WEED DATASET dataset（ 4 categories and 619 images）：training set: validation set: test set=432：123：64
+
 Attention: After downloading the self built dataset, modify the paths in the train.txt, val.txt, and test.txt files before use.
 
 ### Python

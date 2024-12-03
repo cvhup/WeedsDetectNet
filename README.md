@@ -6,13 +6,12 @@ Accurate weed detection is crucial for precision agriculture and green crop prot
 
 Please refer to the quick start installation and usage example below.
 
-<details open>
-<summary>Configuration</summary>
+### Configuration
 GPU：NVIDIA A40     48GB HBM2 
 CPU：Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
 cuda：12.1
 
-<summary>Install</summary>
+### Install
 
 Pip install the [**Python==3.8**](https://www.python.org/) environment with [**PyTorch==2.2.2**](https://pytorch.org/get-started/locally/).
 
@@ -47,38 +46,29 @@ mim install "mmengine==0.10.4"
 mim install "mmcv==2.2.0"
 ```
 
-
+### Datasets
+Self-built dataset：[https://drive.google.com/drive/folders/1JIuWTEHDsO3MxIktByN3Qn2xBXhHsdyz?usp=sharing](https://drive.google.com/drive/folders/1JIuWTEHDsO3MxIktByN3Qn2xBXhHsdyz?usp=sharing)
+CottonWeedDet12 dataset：[https://zenodo.org/records/7535814](https://zenodo.org/records/7535814)
+4WEED DATASET dataset：[https://osf.io/w9v3j/](https://osf.io/w9v3j/)
+Divide the dataset：training set: validation set: test set=7:2:1
+Self-built dataset（ 6 categories and 1990 images）：training set: validation set: test set=1390：396：204
+CottonWeedDet12 dataset（ 12 categories and 5648 images）:training set: validation set: test set=3953：1129：566
+4WEED DATASET dataset（ 4 categories and 619 images）：training set: validation set: test set=432：123：64
+Attention: After downloading the self built dataset, modify the paths in the train.txt, val.txt, and test.txt files before use.
 
 ### Python
 
-YOLO may also be used directly in a Python environment, and accepts the same [arguments](https://docs.ultralytics.com/usage/cfg/) as in the CLI example above:
+The following is the training and testing process:
 
 ```python
-from ultralytics import YOLO
 
-# Load a model
-model = YOLO("yolo11n.pt")
+# train
+CUDA_VISIBLE_DEVICES=5 python train.py  # default：cache=True,imgsz=640,epochs=500,batch=8
+```
+```python
 
-# Train the model
-train_results = model.train(
-    data="coco8.yaml",  # path to dataset YAML
-    epochs=100,  # number of training epochs
-    imgsz=640,  # training image size
-    device="cpu",  # device to run on, i.e. device=0 or device=0,1,2,3 or device=cpu
-)
-
-# Evaluate model performance on the validation set
-metrics = model.val()
-
-# Perform object detection on an image
-results = model("path/to/image.jpg")
-results[0].show()
-
-# Export the model to ONNX format
-path = model.export(format="onnx")  # return path to exported model
+# test
+CUDA_VISIBLE_DEVICES=5 python test.py  # default：cache=True,imgsz=640,epochs=500,batch=8
 ```
 
-See YOLO [Python Docs](https://docs.ultralytics.com/usage/python/) for more examples.
-
-</details>
 

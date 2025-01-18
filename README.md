@@ -1,5 +1,5 @@
 # <div align="center">WeedsDetectNet</div>
-
+Accurate weed detection is crucial for precision agriculture and sustainable crop protection. Existing methods often struggle to address high recognition errors, especially in complex environments where weeds have similar colors and shapes. This paper introduces an improved YOLOv5n-based weed detection model, WeedsDetectNet. WeedsDetectNet incorporates a green attention module to enhance the focus on green weed regions while suppressing non-target areas. An adaptive joint feature fusion method is proposed, combining low-level details such as weed color and texture with high-level semantic information, enabling better extraction of weed-specific features. Furthermore, a decoupled head design utilizes dynamic attention to separately handle classification and localization tasks, improving detection accuracy. The model was evaluated on the CottonWeedDet12, 4WEED DATASET, and a self-constructed dataset. Experimental results demonstrate that WeedsDetectNet outperforms existing methods, achieving higher average precision, lower misdetection rates, and more accurate bounding box regression. This lightweight model exhibits strong generalization ability and robustness, making it well-suited for real-world weed detection tasks. 
 
 
 ## <div align="center">Documentation</div>

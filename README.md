@@ -49,6 +49,10 @@ mim install "mmcv==2.2.0"
 ### Datasets
 Self-built dataset：[https://drive.google.com/drive/folders/1JIuWTEHDsO3MxIktByN3Qn2xBXhHsdyz?usp=sharing](https://drive.google.com/drive/folders/1JIuWTEHDsO3MxIktByN3Qn2xBXhHsdyz?usp=sharing)
 
+6WEED dataset (self-built dataset) : [https://openxlab.org.cn/datasets/cvnet/6WEED](https://openxlab.org.cn/datasets/cvnet/6WEED)
+
+CornWeed9 dataset (self-built dataset) : [https://openxlab.org.cn/datasets/cvnet/CornWeed9](https://openxlab.org.cn/datasets/cvnet/CornWeed9)
+
 CottonWeedDet12 dataset：[https://zenodo.org/records/7535814](https://zenodo.org/records/7535814)
 
 4WEED DATASET dataset：[https://osf.io/w9v3j/](https://osf.io/w9v3j/)
